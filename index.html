@@ -7,17 +7,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <title>Dylan Lacelle</title>
   </head>
-  <body>
-      <!-- header section section -->
-    <div class="container-sm p-1 mb-2 border-bottom border-dark">
-      <h1>Dylan Lacelle</h1>
-      <p>Computer Programmer - C#, Front-end Web (HTML, CSS, JS), Access and more</p>
+  <body>  <!-- navbar section -->
+    <div class="container-sm">
+      <nav class="navbar navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="topNav">
+            <ul class="nav navbar-nav" id="test">
+              <div class="navbar-header text-white"><h2>Navigation</h2></div>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </ul>
+            <ul class="nav navbar-nav">
+              <div class="navbar-header text-white"><h2>Links</h2></div>
+              <a target="_blank" href="https://www.linkedin.com/in/dlacelle/">Linked In</a>
+              <a target="_blank" href="https://github.com/DylanMLacelle">GitHub</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1ksPgLspxrii8BUshwu1WTLowQ5w_3J-8/view">Resume</a>
+              <a target="_blank" href="mailto:dylanmlacelle@gmail.com">Email</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-sm mt-md-5 pt-5 border-bottom border-dark">
+        <div class="col" id="about">
+          <h1>Dylan Lacelle</h1>
+          <p>Computer Programmer - C#, Front-end Web (HTML, CSS, JS), Access and more</p>
+        </div>
     </div>
     <!-- Introduction section -->
-    <div class="container-sm">
+    <div class="container-sm" >
       <div class="row p-2">
         <div class="col-md-8">
           <h3>Computer Programming Student / 2018 - 2022</h3>
@@ -26,18 +52,18 @@
           <p>Currently learning in school:</p>
           <ul>
               <li>C#</li>
-              <li>JavaScript, HTML, CSS</li>
+              <li>JavaScript, HTML, CSS, PHP</li>
               <li>Microsoft Access and Visual Basic</li>
               <li>.ASP NET Web development</li>
               <li>jQuery and JAVA</li>
-              <li>SQL</li>
+              <li>MySQL / SQL</li>
               <li>Razor / PHP</li>
           </ul>
           <p>Currently learning in free time:</p>
           <ul>
               <li>Python</li>
               <li>React</li>
-              <li>Unity game engine (C#)</li>
+              <li>Unity game engine</li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -48,17 +74,17 @@
     <!-- Spacer before project section -->
     <div class="my-5"></div>
     <!-- project section -->
-    <div class="container-sm">
+    <div class="container-sm" id="projects">
       <h2 class="text-center mb-3">Projects</h2>
       
-      <div class="card mb-3">
+      <div class="card mb-3 border-dark p-1">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img src="images/jishoapi.png" alt="roll-a-ball" class="card-img">
           </div>
           <div class="col-md-4">
             <div class="card-body">
-              <h4 class="card-title">JLPT Quiz<span class="badge badge-dark">Latest</span></h4>
+              <h4 class="card-title">JLPT Quiz <span class="badge badge-dark">Latest</span></h4>
               <p class="card-text">JLPT is a project utilizing React and an API. This project is teaching me about React 
                 and how to manipulate APIs.
               </p>
@@ -69,7 +95,7 @@
         </div>
       </div>
 
-      <div class="card mb-3">
+      <div class="card mb-3 border-dark p-1">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img src="images/website.png" alt="website-v1" class="card-img">
@@ -87,7 +113,7 @@
         </div>
       </div>
 
-      <div class="card mb-3">
+      <div class="card mb-3 border-dark p-1">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img src="images/alienf.png" alt="alien-farmer" class="card-img">
@@ -103,7 +129,7 @@
         </div>
       </div>
 
-      <div class="card mb-3">
+      <div class="card mb-3 border-dark p-1">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img src="images/flashcards.png" alt="flash-cards" class="card-img">
@@ -122,7 +148,7 @@
         </div>
       </div>
 
-      <div class="card mb-3">
+      <div class="card mb-3 border-dark p-1">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img src="images/rollaball.png" alt="roll-a-ball" class="card-img">
@@ -140,7 +166,7 @@
 
     </div>
    <!-- contacts section -->
-    <div class="container-sm">
+    <div class="container-sm" id="contact">
       <h2 class="text-center mb-3">Get in touch</h2>
             <div class="d-flex flex-row mb-3 mx-auto" style="max-width: 500px; max-height: 500px;">
                 <div class="mx-2"><p class="text-center">Email</p><a target="_blank" href="mailto:dylanmlacelle@gmail.com"><img class="img-fluid" src="images/email.png"/></a></div>
@@ -156,5 +182,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script  src="scripts/main.js"></script>
   </body>
 </html>
