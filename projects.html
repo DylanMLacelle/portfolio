@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="styles/styles.css">
+  
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <title>Dylan Lacelle</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-default navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="height:32px"> Dylan Lacelle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <a target="_blank" href="https://github.com/DylanMLacelle">
+            <img class="img-fluid mx-1" src="images/GitHub-Mark-Light-32px.png"/></a>
+          <a target="_blank" href="https://www.linkedin.com/in/dlacelle/">
+            <img style="height:32px;" class="img-fluid mx-1" src="images/linkedin-3-32.png"/></a>
+        </div>
+      </div>
+    </nav>
+</header>
+<body>
+  <div class="container mt-3 pt-3">
+    <div class="card text-white bg-warning my-3" id="disclaimer">
+      <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4 class="alert-heading">Disclaimer!</h4> 
+        <p class="mb-0">Like most developers I talk to, I have started many projects but have only finished a few—all projects displayed below are unfinished unless otherwise stated.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card text-dark bg-light mb-3">
+          <h3 class="card-header">Shopper</h3>
+          <div class="technologies-used">
+            <img src="images/shopper_1.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">Android Studio</span>
+                  <span class="badge rounded-pill badge-secondary">Java</span>
+                  <span class="badge rounded-pill badge-secondary">SQL</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Shopper is a project that I made in my free time to get more comfortable with Java and Android Studio. It is a pretty basic application that I had fun making. At this point,
+              I have ceased development. However, I wanted to hook up a grocery API to fetch prizes from local stores. I may revisit this idea in the future.
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" href="https://github.com/DylanMLacelle/shopper" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button></a>
+          </div>
+          <div class="card-footer text-dark">
+            2020
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card mb-3 text-dark bg-light">
+          <h3 class="card-header">Match Em! <span class="badge badge-dark float-right">Finished</span></h3>
+          <div class="technologies-used">
+            <img src="images/match_em_2.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">Android Studio</span>
+                  <span class="badge rounded-pill badge-secondary">Java</span>
+                  <span class="badge rounded-pill badge-secondary">Game Design</span>
+                  <span class="badge rounded-pill badge-secondary">Collaboration</span>
+                  <span class="badge rounded-pill badge-secondary">SQL</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Match Em was a group project where an individual and I collaborated to design a native mobile application for Android. We chose to do a simple matching game where the player
+              would attempt to match the various images in the least amount of moves as possible.
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" href="https://github.com/DylanMLacelle/match_game" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button></a>
+          </div>
+          <div class="card-footer text-dark">
+            2020
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card text-dark bg-light mb-3">
+          <h3 class="card-header">Alien Farmer <span class="badge badge-dark float-right">Finished</span></h3>
+          <div class="technologies-used">
+            <img src="images/alienf.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">XML / Monogame</span>
+                  <span class="badge rounded-pill badge-secondary">C#</span>
+                  <span class="badge rounded-pill badge-secondary">Game Design</span>
+                  <span class="badge rounded-pill badge-secondary">Documentation</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Alien farmer was a creative school project that taught me about game design practices. We were allowed creative freedom to design and build any game we wanted. 
+              My creativity and knowledge constrained me. At this point, I had a little bit of experience making games in Unity. 
+              I understood some of the necessary game design practices for specific features that I wanted to implement. It was the very first full-length project that I completed from start to finish. 
+              <a target="_blank" href="https://www.kenney.nl/">https://www.kenney.nl/</a>.
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" href="https://github.com/DylanMLacelle/alien-farmer" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button></a>
+          </div>
+          <div class="card-footer text-dark">
+            2019
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card mb-3 text-dark bg-light">
+          <h3 class="card-header">Flash Cards</h3>
+          <div class="technologies-used">
+            <img src="images/flashcards.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">Windows Forms</span>
+                  <span class="badge rounded-pill badge-secondary">C#</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              "Flashcards" is the first application I ever made. Using windows forms, I created a similar flashcard system to an application called <a href="https://apps.ankiweb.net/">"Anki"</a>. 
+              The user can add flashcards and get statistics based on their performance. Users must self-evaluate themselves whether they answered correctly or not. 
+              <strong>WW2 did not take place in only 1944!</strong>
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" href="https://github.com/DylanMLacelle/flashcards_prototype" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button></a>
+          </div>
+          <div class="card-footer text-dark">
+            2018
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card mb-3 text-dark bg-light">
+          <h3 class="card-header">JLPT Quiz</h3>
+          <div class="technologies-used">
+            <img src="images/jishoapi.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">React</span>
+                  <span class="badge rounded-pill badge-secondary">JavaScript</span>
+                  <span class="badge rounded-pill badge-secondary">Back-end</span>
+                  <span class="badge rounded-pill badge-secondary">External API</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This project's intention was to teach me React and try out utilizing a public API. At this point, I had known what APIs are and that they existed but did not know how to interact with them elegantly.
+              I learned to parse a JSON object from a response and used the information pulled from <a href="https://jisho.org/">Jisho.org</a> to make a simple quizzing website based on different levels of Japanese.
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" href="https://github.com/DylanMLacelle/jlpt_tester" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button></a>
+          </div>
+          <div class="card-footer text-dark">
+            2019
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex align-items-stretch">
+        <div class="card text-dark bg-light mb-3">
+          <h3 class="card-header">Japanese Study Application <span class="badge badge-dark float-right">Finished</span></h3>
+          <div class="technologies-used">
+            <img src="images/jpStudyMobileApp.png" class="img-fluid p-3 project-image">
+            <span class="technologies-tooltip project-image bg-dark">
+              <div class="container text-white">
+                <h1>
+                  <span class="badge rounded-pill badge-secondary test">jQuery</span>
+                  <span class="badge rounded-pill badge-secondary">JavaScript</span>
+                  <span class="badge rounded-pill badge-secondary">SQL</span>
+                </h1>
+              </div>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Yet another project related to Japanese. I made this application with jQuery. Through this project I learned basic mobile development with jQuery. I thoroughly enjoyed this project
+              and would be happy to use jQuery in the future. 
+            </p>
+          </div>
+          <div class="card-body d-flex align-items-end">
+            <a target="_blank" class="card-link">
+              <button type="button" class="btn btn-dark">Github</button>
+            </a>
+          </div>
+          <div class="card-footer text-dark">
+            2019
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html> 

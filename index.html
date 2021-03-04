@@ -1,206 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Dylan Lacelle</title>
-  </head>
-  <body>  <!-- navbar section -->
-    <!-- <div class="container-sm">
-      <nav class="navbar navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="topNav">
-            <ul class="nav navbar-nav" id="test">
-              <div class="navbar-header text-white"><h2>Navigation</h2></div>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-            </ul>
-            <ul class="nav navbar-nav">
-              <div class="navbar-header text-white"><h2>Links</h2></div>
-              <a target="_blank" href="https://www.linkedin.com/in/dlacelle/">Linked In</a>
-              <a target="_blank" href="https://github.com/DylanMLacelle">GitHub</a>
-              <a target="_blank" href="https://drive.google.com/file/d/1ksPgLspxrii8BUshwu1WTLowQ5w_3J-8/view">Resume</a>
-              <a target="_blank" href="mailto:dylanmlacelle@gmail.com">Email</a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div> -->
-    <div class="container-sm mt-md-5 pt-5 border-bottom border-dark">
-        <div class="col" id="about">
-          <h1>Dylan Lacelle</h1>
-          <p>Computer Programmer - C#, Front-end Web (HTML, CSS, JS) and more</p>
-        </div>
-    </div>
-    <!-- Introduction section -->
-    <div class="container-sm" >
-      <div class="row p-2">
-        <div class="col-md-8">
-          <h3>Computer Programming Student / 2018 - 2021</h3>
-          <p>Hi, I'm Dylan Lacelle. I am a computer programming student with a great work ethic and will be starting my final year this September.
-            I am currently seeking a career as a front-end web developer for May 2021 or part-time during my final year of school.
-              </p>
-          <h4>Currently learning in school:</h4>
-          <ul>
-              <li>C#</li>
-              <li><b>JavaScript, HTML, CSS, PHP</b></li>
-              <li>Microsoft Access and Visual Basic</li>
-              <li><b>.ASP NET Web development</b></li>
-              <li><b>jQuery and JAVA web development</b></li>
-              <li>MySQL / SQL</li>
-              <li>Razor / PHP</li>
-          </ul>
-          <h4>Currently learning in free time:</h4>
-          <ul>
-              <li>Python</li>
-              <li><b>React</b></li>
-              <li>Unity game engine</li>
-              <li>Godot game engine</li>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="styles/styles.css">
+  
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <title>Dylan Lacelle</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-default navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="height:32px"> Dylan Lacelle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-4">
-            <img src="images/me_v2.jpg" class="img-fluid rounded" style="height: 80%;" alt="me">
+        <div class="d-flex">
+          <a target="_blank" href="https://github.com/DylanMLacelle">
+            <img class="img-fluid mx-1" src="images/GitHub-Mark-Light-32px.png"/></a>
+          <a target="_blank" href="https://www.linkedin.com/in/dlacelle/">
+            <img style="height:32px;" class="img-fluid mx-1" src="images/linkedin-3-32.png"/></a>
+        </div>
+      </div>
+    </nav>
+</header>
+<body>
+  <div class="bg-light mt-5">
+    <div class="container" id="app">
+      <div class="row">
+        <div class="col-sm" id="intro-image">
+          <img src="images/profile_pic.png"  class="img-fluid py-5">
+        </div>
+        <div class="col-sm-5 m-auto text-dark pb-3" id="intro-text">
+          <p class="lead text-danger">Knowledge acquisition through experience.</p>
+          <h2 class="m-2">I'm Dylan,</h2>
+          <h2 class="m-2 pl-3">a learner.</h2>
+          <p class="m-2">I am a current student at Conestoga College enrolled in a Computer Programming / Analyst course. I plan on looking for a career related to software development where my work can impact the world on a small scale, 
+            whether it be improving the way a company orders its products, analyzing data to spot potential efficiency improvements, or discovering entirely new processes to streamline procedures for businesses.
+          </p>
+          <a class="btn btn-dark" href="about.html" role="button">Learn More</a>
         </div>
       </div>
     </div>
-    <!-- Spacer before project section -->
-    <div class="my-5"></div>
-    <!-- project section -->
-    <div class="container-sm bg-secondary rounded mb-3 pb-3" id="projects">
-      <h2 class="text-center text-white mb-3">Projects</h2>
-      
-      <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/jishoapi.png" alt="roll-a-ball" class="card-img">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">JLPT Quiz <span class="badge badge-dark">Latest</span></h4>
-              <p class="card-text">JLPT is my current project utilizing React. The purpose of this project is to teach me 
-                the React framework and to allow me to become more familiar with utilizing website APIs.
-              </p>
-              <p class="card-text"><b>Technologies Used:</b> React, Jisho's API</p>
-              <a target="_blank" href="https://github.com/DylanMLacelle/jlpt_tester" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/jpStudyMobileApp.jpg" alt="mobile-app" class="card-img">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Japanese Study Application</h4>
-              <p class="card-text">This project taught me about using Jquery to program single page mobile applications and how to
-                use Android Studio to export and put a mobile application onto a mobile device</p>
-              <p class="card-text"><b>Technologies Used:</b> Jquery, Android Studio</p>
-              <a target="_blank" href="#" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/website.png" alt="website-v1" class="card-img">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Previous Website</h4>
-              <p class="card-text">For my previous website, I wanted to start simple. I realized my initial design wasnt suitable for
-                mobile devices. So I focused on trying to make my website mobile friendly without external libraries. It was a good learning experience.</p>
-              <p class="card-text"><b>Technologies Used:</b> HTML, CSS, JavaScript</p>
-              <a target="_blank" href="https://github.com/DylanMLacelle/index" class="btn btn-primary">Github</a> 
-              <a target="_blank" href="https://dylanmlacelle.github.io/index/" class="btn btn-primary">Check it out!</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/alienf.png" alt="alien-farmer" class="card-img">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Alien Farmer</h4>
-              <p class="card-text">Alien farmer was a creative school project that taught me about game design practices.</p>
-              <p class="card-text"><b>Technologies Used:</b> XNA / Monogame, C#</p>
-              <a target="_blank" href="https://github.com/DylanMLacelle/alien-farmer" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/flashcards.png" alt="flash-cards" class="card-img">
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Flashcards</h4>
-              <p class="card-text">Flashcards was a windows form application I build to understand simple input and output of a text file. It allows you to
-                create flashcards with questions and answers. After you have made a deck you can load it up and study all of the cards. You self evaluate yourself
-                and get statistics based on how you performed.
-              </p>
-              <p class="card-text"><b>Technologies Used:</b> Windows Forms, C#</p>
-              <a target="_blank" href="https://github.com/DylanMLacelle/flashcards_prototype" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--
-      <div class="card mb-3 border-dark p-1">
-        <div class="row no-gutters">
-          <div class="col-md-8">
-            <img src="images/rollaball.png" alt="roll-a-ball" class="card-img">
-          </div> 
-          <div class="col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Roll a Ball</h4>
-              <p class="card-text">Roll a ball was my first attempt at a developing a game. I focused on procedural level generation.</p>
-              <p class="card-text"><b>Technologies Used:</b> Unity, C#</p>
-              <a target="_blank" href="https://github.com/DylanMLacelle/rollaball-2D" class="btn btn-primary">Github</a>
-            </div>
-          </div> 
-        </div>
-      </div>
-      -->
-    </div>
-   <!-- contacts section -->
-    <div class="container-sm" id="contact">
-      <h2 class="text-center mb-3">Get in touch</h2>
-            <div class="d-flex flex-row mb-3 mx-auto" style="max-width: 500px; max-height: 500px;">
-                <div class="mx-2"><p class="text-center">Email</p><a target="_blank" href="mailto:dylanmlacelle@gmail.com"><img class="img-fluid" src="images/email.png"/></a></div>
-                <div class="mx-2"><p class="text-center">LinkedIn</p><a target="_blank" href="https://www.linkedin.com/in/dlacelle/"><img class="img-fluid" src="images/linkedin.png"/></a></div>
-                <div class="mx-2"><p class="text-center">GitHub</p><a target="_blank" href="https://github.com/DylanMLacelle"><img class="img-fluid" src="images/github.png"/></a></div>
-                <div class="mx-2"><p class="text-center">Resume</p><a target="_blank" href="https://drive.google.com/file/d/1wRU7J2sijQufoQc-X-gdrNOomyEws9Q4/view?usp=sharing"><img class="img-fluid" src="images/resume.png"/></a></div>
-            </div>
-            <p class="text-center">Website designed and built by Dylan Lacelle &copy;2020</p>
-    </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script  src="scripts/main.js"></script>
-  </body>
+  </div>
+</body>
 </html>

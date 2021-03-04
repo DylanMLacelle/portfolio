@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="styles/styles.css">
+  
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <title>Dylan Lacelle</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-default navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="height:32px"> Dylan Lacelle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <a target="_blank" href="https://github.com/DylanMLacelle">
+            <img class="img-fluid mx-1" src="images/GitHub-Mark-Light-32px.png"/></a>
+          <a target="_blank" href="https://www.linkedin.com/in/dlacelle/">
+            <img style="height:32px;" class="img-fluid mx-1" src="images/linkedin-3-32.png"/></a>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<body>
+  <!--About section-->
+  <div class="mb-3 bg-light" id="about">
+    <div class="jumbotron container text-dark bg-light">
+      <h1 class="display-5">Hi.</h1>
+      <p class="lead">Throughout my time at school and work, I have learned and cultivated a variety of transferable and specialized skills suitable for
+        innovating and inspiring the world through code.
+      </p>
+      <hr class="my-4">
+      <h1 class="h2">What have I learned?</h1>
+      <p><small>Not limited to the following. These are just my most prominent skills.</small></p>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="lead">
+            Through my academic education:
+            <ul v-for="text in edu">
+              <li>{{text.text}}</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="lead">
+            Through my personal development:
+            <ul v-for="text in per ">
+              <li>{{text.text}}</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <h1 class="h2">How have I learned?</h1>
+      <p class="lead">
+        Hands-on learning is the main focus of my education, both in and out of school.
+      </p>
+      <p class="mt-5">Want to see examples of what I have done? Or more details about my education? Use the buttons below.</p>
+      <p class="lead">
+        <div class="btn-group" role="group">
+          <a class="btn btn-dark btn-lg" target="_blank" href="https://drive.google.com/file/d/1wRU7J2sijQufoQc-X-gdrNOomyEws9Q4" role="button">View Resume</a>
+          <a class="btn btn-dark btn-lg" href="projects.html" role="button">View Projects</a>
+        </div>
+      </p>
+    </div>
+  </div>
+  <!--Qualities section-->
+  <div class="text-white">
+    <div class="container mb-3" id="qualities">
+        <div class="row">
+          <div class="col-sm">
+            <div v-for="card in cards">
+              <div v-if="card.highlight" class="card text-white bg-primary mb-3">
+                <h3 class="card-header">{{ card.title }}</h3>
+                <div class="card-body">
+                  <p class="card-text">{{ card.text }}</p>
+                </div>
+              </div>
+              <div v-else class="card text-white bg-secondary mb-3">
+                <h3 class="card-header">{{ card.title }}</h3>
+                <div class="card-body">
+                  <p class="card-text">{{ card.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img src="images/me_p.jpg" class="img-fluid rounded about-image">
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  /* this vue was fun */
+  var cards_array = [ 
+        {
+          title: 'A professional mistake maker', 
+          text: '"I get knocked down but I get up again."',
+          highlight: false
+        },
+        {
+          title: 'A continuous learner', 
+          text: 'I love to improve and try new things.',
+          highlight: false
+        },
+        {
+          title: 'Self-disciplined', 
+          text: 'Setting a plan and sticking to it is a sure fire way to achieve your goals.',
+          highlight: false
+        },
+        {
+          title: 'I know my limits', 
+          text: 'Taking a break can also help one improve themselves.',
+          highlight: false
+        },
+        {
+          title: 'I have fun', 
+          text: 'I try my best to find fun in whatever I am doing.',
+          highlight: false
+        }
+  ];
+
+  var education_skills = [
+    {text: 'C#'},
+    {text: 'JS / HTML / CSS'},
+    {text: 'UML'},
+    {text: 'Relational Databases'}
+  ];
+
+  var personal_skills = [
+    {text: 'Node.js / Express.js'},
+    {text: 'Bootstrap'},
+    {text: 'MongoDB'},
+    {text: 'Python'}
+  ]
+
+  var qualities = new Vue({
+    el: "#qualities",
+    data: {
+      index: 0,
+      cards: cards_array
+    },
+    created: function () {
+      index = 0,
+      cards = cards_array
+    },
+    mounted: function () {
+      setInterval(() => {
+        for(i = 0; i < cards.length; i++) {
+          cards[i].highlight = false;
+        }
+        cards[index].highlight = true;
+        (index < cards.length - 1) ? index++ : index = 0;
+      }, 3000);
+    }
+  });
+
+  var about = new Vue({
+    el: '#about',
+    created: function () {
+      edu = education_skills;
+      per = personal_skills;
+    }
+  });
+</script>
